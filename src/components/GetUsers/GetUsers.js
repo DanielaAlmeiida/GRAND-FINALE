@@ -5,14 +5,14 @@ import {
 } from "@primer/octicons-react";
 import InputSearch from "../../components/InputSearch";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import apiRequests from "../../api";
 
 export default function GetUsers({ url, showPhoneAndEmail, titulo }) {
   const [usuarios, setUsuarios] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(url)
+    apiRequests
+      .get("/usuarios")
       .then((resposta) => {
         setUsuarios(resposta.data);
       })

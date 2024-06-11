@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Navbar />
       <GetUsers
-        url="http://20.197.231.160:3000/usuarios"
+        url="http://192.168.0.112:3004/usuarios"
         showPhoneAndEmail={false}
         titulo="Conecte-se com os usuários:"
       />

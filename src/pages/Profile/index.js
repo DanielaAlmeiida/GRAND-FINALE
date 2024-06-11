@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../../components/Navbar";
 import { FeedPersonIcon, LocationIcon } from "@primer/octicons-react";
+import apiRequests from "../../api";
 
 export default function Profile() {
   const [usuario, setUsuario] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://20.197.231.160:3000/usuario/664d50b1f0a77aa2a2ed10ca")
+    apiRequests
+      .get("/usuario/664d50b1f0a77aa2a2ed10ca")
       .then((resposta) => {
         setUsuario(resposta.data);
       })
