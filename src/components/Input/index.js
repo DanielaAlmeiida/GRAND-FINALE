@@ -1,4 +1,4 @@
-export default function Input({ label, id, type, handlechange, name, value='' }) {
+export default function Input({ label, id, type, handlechange, name, value }) {
   return (
     <div class="mb-3">
       <label for={id} class="form-label">
