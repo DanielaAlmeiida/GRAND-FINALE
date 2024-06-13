@@ -9,7 +9,7 @@ export default function Profile() {
 
   useEffect(() => {
     apiRequests
-      .get("/usuario/664d50b1f0a77aa2a2ed10ca")
+      .get("http://127.0.0.1:4000/usuario/664d50b1f0a77aa2a2ed10ca")
       .then((resposta) => {
         setUsuario(resposta.data);
       })

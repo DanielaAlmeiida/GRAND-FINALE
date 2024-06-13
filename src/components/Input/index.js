@@ -1,4 +1,4 @@
-export default function Input({ label, id, type }) {
+export default function Input({ label, id, type, handlechange, name }) {
   return (
     <div class="mb-3">
       <label for={id} class="form-label">
@@ -9,6 +9,8 @@ export default function Input({ label, id, type }) {
         class="form-control"
         id={id}
         aria-describedby="emailHelp"
+        name={name}
+        onChange={handlechange}
         required={true}
       />
     </div>

@@ -8,8 +8,8 @@ export default function Login() {
 
   const handleEntrarClick = (event) => {
     event.preventDefault();
-    const email = document.getElementById("exampleInputEmail1").value;
-    const senha = document.getElementById("exampleInputPassword1").value;
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
 
     if (email && senha) {
       navigate("/inicio");
@@ -27,7 +27,7 @@ export default function Login() {
       <form className="p-5">
         <h1 className="pb-3">Login</h1>
         <Input label={"E-mail"} id={"email"} type={"email"} />
-        <Input label={"Senha"} id={"nome"} type={"password"} />
+        <Input label={"Senha"} id={"senha"} type={"password"} />
         <div className="mb-3 form-check">
           <input
             type="checkbox"

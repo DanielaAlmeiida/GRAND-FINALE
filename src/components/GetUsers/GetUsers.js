@@ -12,7 +12,7 @@ export default function GetUsers({ url, showPhoneAndEmail, titulo }) {
 
   useEffect(() => {
     apiRequests
-      .get("/usuarios")
+      .get(url)
       .then((resposta) => {
         setUsuarios(resposta.data);
       })
