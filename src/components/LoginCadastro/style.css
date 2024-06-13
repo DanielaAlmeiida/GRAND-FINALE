@@ -1,26 +1,27 @@
 .btn-login-cadastro {
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-background {
-    display: flex;
-    width: 420px;
-    height: 60px;
-    background-color: blue;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: 420px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-login, .btn-cadastro {
-    width: 200px;
-    height: 40px;
-    border: none;
-    background-color: aqua;
+.btn-login,
+.btn-cadastro {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: #86aedf;
+  color: white;
 }
 
 .clicked {
-    background-color: beige;
+  background-color: #2a69b4;
 }

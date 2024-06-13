@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import LoginCadastro from "../../components/LoginCadastro";
 import { useNavigate } from "react-router-dom";
+import Input from "../../components/Input";
 
 export default function Login() {
   const navigate = useNavigate();
 
   const handleEntrarClick = (event) => {
     event.preventDefault();
-    const email = document.getElementById('exampleInputEmail1').value;
-    const senha = document.getElementById('exampleInputPassword1').value;
-    
+    const email = document.getElementById("exampleInputEmail1").value;
+    const senha = document.getElementById("exampleInputPassword1").value;
+
     if (email && senha) {
       navigate("/inicio");
     } else {
@@ -25,36 +26,24 @@ export default function Login() {
       <LoginCadastro />
       <form className="p-5">
         <h1 className="pb-3">Login</h1>
-        <div className="mb-3">
-          <label htmlFor="exampleInputEmail1" className="form-label">
-            Email
-          </label>
-          <input
-            type="email"
-            className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="exampleInputPassword1" className="form-label">
-            Senha
-          </label>
-          <input
-            type="password"
-            className="form-control"
-            id="exampleInputPassword1"
-            required
-          />
-        </div>
+        <Input label={"E-mail"} id={"email"} type={"email"} />
+        <Input label={"Senha"} id={"nome"} type={"password"} />
         <div className="mb-3 form-check">
-          <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+          <input
+            type="checkbox"
+            className="form-check-input"
+            id="exampleCheck1"
+          />
           <label className="form-check-label" htmlFor="exampleCheck1">
             Lembrar-me
           </label>
         </div>
-        <button type="submit" className="btn btn-primary" style={{ width: "100%" }} onClick={handleEntrarClick}>
+        <button
+          type="submit"
+          className="btn btn-primary"
+          style={{ width: "100%" }}
+          onClick={handleEntrarClick}
+        >
           Entrar
         </button>
       </form>
