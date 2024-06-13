@@ -1,0 +1,26 @@
+.btn-login-cadastro {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-background {
+    display: flex;
+    width: 420px;
+    height: 60px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-login, .btn-cadastro {
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: aqua;
+}
+
+.clicked {
+    background-color: beige;
+}

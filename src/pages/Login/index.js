@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import LoginCadastro from "../../components/LoginCadastro";
 
 export default function Login() {
   return (
@@ -6,6 +7,7 @@ export default function Login() {
       class="p-5 d-flex flex-column justify-content-center align-items-center "
       style={{ height: "80vh" }}
     >
+      <LoginCadastro />
       <form class="p-5">
         <h1 class="pb-3">Login</h1>
         <div class="mb-3">
