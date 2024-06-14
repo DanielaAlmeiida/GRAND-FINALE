@@ -71,7 +71,7 @@ export default function Register() {
 
   const enderecoGetId = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:4000/enderecos");
+      const response = await axios.get("http://20.197.231.134:3000/enderecos");
       const lastIndex = response.data.length - 1;
       const lastEnderecoId = response.data[lastIndex]._id;
       setEnderecoId(lastEnderecoId);
@@ -95,7 +95,7 @@ export default function Register() {
 
       console.log(updatedUser);
 
-      const response = await axios.post("http://127.0.0.1:4000/usuario", updatedUser);
+      const response = await axios.post("http://20.197.231.134:3000/usuario", updatedUser);
       console.log(response);
       navigate("/inicio"); 
     } catch (error) {

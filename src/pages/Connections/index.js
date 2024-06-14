@@ -6,7 +6,7 @@ export default function Connections() {
     <>
       <Navbar />
       <GetUsers
-        url="http://127.0.0.1:4000/usuarios"
+        url="http://20.197.231.134:3000/usuarios"
         showPhoneAndEmail={true}
         titulo="Suas connections"
       />
