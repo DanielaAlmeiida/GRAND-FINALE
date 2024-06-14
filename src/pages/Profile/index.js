@@ -9,7 +9,7 @@ export default function Profile() {
 
   useEffect(() => {
     apiRequests
-      .get("http://20.197.231.134:3000/usuario/664d50b1f0a77aa2a2ed10ca")
+      .get("http://20.197.231.134:3000/usuario/6643cd512cd2bd86c8baa55f")
       .then((resposta) => {
         setUsuario(resposta.data);
       })
@@ -41,7 +41,7 @@ export default function Profile() {
           <div className="border-bottom py-4">
             <h5>Localização: </h5>
             <p>
-              <LocationIcon size={20} /> {usuario.endereco?.logradouro}
+              <LocationIcon size={20} /> {usuario.endereco?.uf}
             </p>
           </div>
 

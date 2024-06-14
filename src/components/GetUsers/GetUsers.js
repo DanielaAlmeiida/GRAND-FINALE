@@ -52,7 +52,7 @@ export default function GetUsers({ url, showPhoneAndEmail, titulo }) {
                   <p className="card-text fw-medium">Áreas: {usuario.areas}</p>
                   <p className="card-text d-flex justify-content-start gap-1">
                     <LocationIcon fill={"gray"} size={20} />
-                    {usuario.endereco?.bairro}
+                    {usuario.endereco?.uf}
                   </p>
                 </section>
                 <div className="col-sm-4 d-flex flex-column gap-0 align-items-stretch">
